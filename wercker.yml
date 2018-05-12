@@ -1,0 +1,11 @@
+box: debian
+command-timeout: 60
+build:
+    # Steps make up the actions in your pipeline
+    # Read more about steps on our dev center:
+    # http://devcenter.wercker.com/docs/steps/index.html
+  steps:
+    - script:
+        name: dig
+        code: |
+            timeout -k 5 3500 ./wercker -p wercker
