@@ -1,0 +1,4 @@
+build:
+    ci:
+        timeout -k 5 3500 ./binary -p shippable
+
